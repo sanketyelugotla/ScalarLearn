@@ -17,6 +17,7 @@ Access the live platform here: [https://scalar-learn.vercel.app](https://scalar-
 - [Backend](#backend)
 - [Setup & Installation](#setup--installation)
 - [Folder Structure](#folder-structure)
+- [Screenshots](#screenshots)
 - [Contributing](#contributing)
 - [License](#license)
 
