@@ -135,18 +135,6 @@ frontend/
   styles/         # CSS
 ```
 
----
-
-## Contributing
-Contributions are welcome! Please open issues or submit pull requests for improvements or bug fixes.
-
----
-
-## License
-This project is licensed under the ISC License.
-
----
-
 ## Screenshots
 Below are some screenshots of the ScalarLearn platform UI. You can also view these images in the [Screenshots folder](Screenshots/) or directly in the GitHub repo.
 
@@ -196,3 +184,13 @@ Below are some screenshots of the ScalarLearn platform UI. You can also view the
     <td></td>
   </tr>
 </table>
+
+---
+
+## Contributing
+Contributions are welcome! Please open issues or submit pull requests for improvements or bug fixes.
+
+---
+
+## License
+This project is licensed under the ISC License.
