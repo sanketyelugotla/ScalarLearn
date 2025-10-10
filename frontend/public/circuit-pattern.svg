@@ -1,0 +1,10 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="circuit-board" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M0 0h100v100H0z" fill="none" />
+      <path d="M30 10h10v10H30zM10 30h10v10H10zM50 30h10v10H50zM70 30h10v10H70zM90 30h10v10H90zM30 50h10v10H30zM50 50h10v10H50zM70 50h10v10H70zM10 70h10v10H10zM50 70h10v10H50zM70 70h10v10H70z" fill="#0066ff" />
+      <path d="M10 10h10v10H10zM70 10h10v10H70zM30 30h10v10H30zM10 50h10v10H10zM90 50h10v10H90zM30 70h10v10H30zM90 70h10v10H90zM10 90h10v10H10zM30 90h10v10H30zM50 90h10v10H50zM70 90h10v10H70zM90 90h10v10H90z" fill="#00ccff" />
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#circuit-board)" />
+</svg>

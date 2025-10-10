@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+@plugin '@tailwindcss/typography';
+
+:root {
+  --background: #f8fafc;
+  --container-background: #ffffff;
+  --secondary-background: #f1f5f9;
+  --secondaryText: #eaeaea;
+  --foreground: #020817;
+  --secondaryForeground: #556072;
+  --intermediate: #677791;
+
+  --primary: #3b82f6;
+  --muted-foreground: #637388;
+  --primary: #3b82f6;
+  --primary-foreground: #f8fafc;
+  --secondary: #f1f5f9;
+  --secondary-foreground: #0f172a;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --accent: #f1f5f9;
+  --accent-foreground: #0f172a;
+  --destructive: #ef4444;
+  --destructive-foreground: #f8fafc;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #3b82f6;
+  --radius: 0.5rem;
+
+  --success: #069c6a;
+  --success-foreground: #069c6a;
+  --error: #ef4444;
+  --error-foreground: #ef4444;
+  --scroll-bar: #0f172a;
+}
+
+[data-theme="dark"] {
+  --background: #020817;
+  --secondary-background: #1e293b;
+  --intermediate: #1e293b;
+  --container-background: #061027;
+  --foreground: #f8fafc;
+
+  --card: #0f172a;
+  --card-foreground: #f8fafc;
+  --popover: #0f172a;
+  --popover-foreground: #f8fafc;
+  --primary: #2563eb;
+  --primary-foreground: #0f172a;
+  --secondary: #1e293b;
+  --secondary-foreground: #f8fafc;
+  --muted: #1e293b;
+  --muted-foreground: #8ba1c1;
+  --accent: #1e293b;
+  --accent-foreground: #f8fafc;
+  --destructive: #7f1d1d;
+  --destructive-foreground: #f8fafc;
+  --border: #1e293b;
+  --input: #1e293b;
+  --ring: #1d4ed8;
+  --success: #069c6a;
+  --success-foreground: #069c6a;
+  --error: #ef4444;
+  --error-foreground: #ef4444;
+  --scroll-bar: rgba(120, 120, 120, 0.3);
+}
+
+@theme {
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-radius: var(--radius);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-secondar-background: var(--secondary-background);
+  --color-container-background: var(--container-background);
+  --color-secondary-text: var(--secondaryText);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-intermediate: var(--intermediate);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-error: var(--error);
+  --color-error-foreground: var(--error-foreground);
+  --color-scroll-bar: var(--scroll-bar)
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Inter, Helvetica, sans-serif;
+}
+
+@keyframes continuousAnimation {
+  0% {
+    transform: rotate(0deg) scale(1) translateY(0);
+  }
+
+  25% {
+    transform: rotate(90deg) scale(1.1) translateY(-10px);
+  }
+
+  50% {
+    transform: rotate(180deg) scale(1.2) translateY(0);
+  }
+
+  75% {
+    transform: rotate(270deg) scale(1.1) translateY(10px);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1) translateY(0);
+  }
+}
+
+.animate-continuous-animation {
+  animation: continuousAnimation 50s linear infinite;
+  transform-origin: center center;
+  /* Ensures rotation happens around the center */
+}
+
+/* Optional: Custom scrollbar for better UI */
+.custom-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-bar);
+  border-radius: 4px;
+}
