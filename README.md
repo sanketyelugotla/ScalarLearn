@@ -152,13 +152,20 @@ Below are some screenshots of the ScalarLearn platform UI. You can also view the
 
 
 ### Mobile View (iPhone 13 Pro)
-<img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/iPhone-13-PRO-localhost%20(1).png?raw=true" width="200" />
-<img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/iPhone-13-PRO-localhost%20(2).png?raw=true" width="200" />
-<img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/iPhone-13-PRO-localhost%20(3).png?raw=true" width="200" />
-<img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/iPhone-13-PRO-localhost%20(4).png?raw=true" width="200" />
-<img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/iPhone-13-PRO-localhost%20(5).png?raw=true" width="200" />
-<img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/iPhone-13-PRO-localhost%20(6).png?raw=true" width="200" />
-<img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/iPhone-13-PRO-localhost.png?raw=true" width="200" />
+<table>
+  <tr>
+    <td><img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/iPhone-13-PRO-localhost%20(1).png?raw=true" width="200" /></td>
+    <td><img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/iPhone-13-PRO-localhost%20(2).png?raw=true" width="200" /></td>
+    <td><img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/iPhone-13-PRO-localhost%20(3).png?raw=true" width="200" /></td>
+    <td><img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/iPhone-13-PRO-localhost%20(4).png?raw=true" width="200" /></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/iPhone-13-PRO-localhost%20(5).png?raw=true" width="200" /></td>
+    <td><img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/iPhone-13-PRO-localhost%20(6).png?raw=true" width="200" /></td>
+    <td><img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/iPhone-13-PRO-localhost.png?raw=true" width="200" /></td>
+    <td></td>
+  </tr>
+</table>
 
 
 ### Desktop View (Macbook Air)
