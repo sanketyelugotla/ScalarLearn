@@ -35,7 +35,7 @@ Access the live platform here: [https://scalar-learn.vercel.app](https://scalar-
 ---
 
 ## Tech Stack
-- **Frontend:** Next.js, React, Tailwind CSS, Framer Motion, Radix UI, Axios
+- **Frontend:** Next.js, React, Tailwind CSS, Framer Motion, Axios
 - **Backend:** Node.js, Express, MongoDB (Mongoose), JWT, Cloudinary, Multer
 
 ---
@@ -106,12 +106,12 @@ NEXT_PUBLIC_DATABASE_URI=http://localhost:5000/api
 
 #### Backend (`backend/.env`)
 ```env
-MONGO_URI = "mongodb+srv://sanketyelugotla:sanket@speakx.abkna.mongodb.net/learning_platform?retryWrites=true&w=majority&appName=speakx"
+MONGO_URI = "Your mondodb uro=i"
 JWT_SECRET = "8abcc049fa12a8d797b7dea5326990d8039dd663de874a031ec48dd87759be61"
 PORT = "5000"
-CLOUDINARY_API_KEY = "257146944171826"
-CLOUDINARY_SECRET_KEY = "gHRDYIKhxR9c16L9Q-6u_eTwvUM"
-CLOUDINARY_NAME = "dbkoifpdg"
+CLOUDINARY_API_KEY = "Your cloudnary api key"
+CLOUDINARY_SECRET_KEY = "Your cloudnary secret key"
+CLOUDINARY_NAME = "Your cloudnary name"
 ```
 
 ---
