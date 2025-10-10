@@ -5,6 +5,11 @@ ScalarLearn is a full-stack online learning platform designed for engineering st
 
 ---
 
+## Live Demo
+Access the live platform here: [https://scalar-learn.vercel.app](https://scalar-learn.vercel.app)
+
+---
+
 ## Table of Contents
 - [Features](#features)
 - [Tech Stack](#tech-stack)
@@ -90,9 +95,24 @@ npm install
 npm run dev
 ```
 
+
 ### Environment Variables
-- Backend: Create a `.env` file in `backend/` for DB connection, JWT secret, Cloudinary keys, etc.
-- Frontend: Create a `.env.local` file in `frontend/` for API URLs if needed.
+You must copy and paste the following environment variables into your respective `.env` files for the project to work locally:
+
+#### Frontend (`frontend/.env.local`)
+```env
+NEXT_PUBLIC_DATABASE_URI=http://localhost:5000/api
+```
+
+#### Backend (`backend/.env`)
+```env
+MONGO_URI = "mongodb+srv://sanketyelugotla:sanket@speakx.abkna.mongodb.net/learning_platform?retryWrites=true&w=majority&appName=speakx"
+JWT_SECRET = "8abcc049fa12a8d797b7dea5326990d8039dd663de874a031ec48dd87759be61"
+PORT = "5000"
+CLOUDINARY_API_KEY = "257146944171826"
+CLOUDINARY_SECRET_KEY = "gHRDYIKhxR9c16L9Q-6u_eTwvUM"
+CLOUDINARY_NAME = "dbkoifpdg"
+```
 
 ---
 
@@ -124,3 +144,48 @@ Contributions are welcome! Please open issues or submit pull requests for improv
 
 ## License
 This project is licensed under the ISC License.
+
+---
+
+## Screenshots
+Below are some screenshots of the ScalarLearn platform UI. You can also view these images in the [Screenshots folder](Screenshots/) or directly in the GitHub repo.
+
+
+### Mobile View (iPhone 13 Pro)
+<img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/iPhone-13-PRO-localhost%20(1).png?raw=true" width="300" />
+<img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/iPhone-13-PRO-localhost%20(2).png?raw=true" width="300" />
+<img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/iPhone-13-PRO-localhost%20(3).png?raw=true" width="300" />
+<img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/iPhone-13-PRO-localhost%20(4).png?raw=true" width="300" />
+<img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/iPhone-13-PRO-localhost%20(5).png?raw=true" width="300" />
+<img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/iPhone-13-PRO-localhost%20(6).png?raw=true" width="300" />
+<img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/iPhone-13-PRO-localhost.png?raw=true" width="300" />
+
+
+### Desktop View (Macbook Air)
+<table>
+  <tr>
+    <td><img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/Macbook-Air-localhost%20(1).png?raw=true" width="400" /></td>
+    <td><img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/Macbook-Air-localhost%20(2).png?raw=true" width="400" /></td>
+    <td><img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/Macbook-Air-localhost%20(3).png?raw=true" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/Macbook-Air-localhost%20(4).png?raw=true" width="400" /></td>
+    <td><img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/Macbook-Air-localhost%20(5).png?raw=true" width="400" /></td>
+    <td><img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/Macbook-Air-localhost%20(6).png?raw=true" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/Macbook-Air-localhost%20(7).png?raw=true" width="400" /></td>
+    <td><img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/Macbook-Air-localhost%20(8).png?raw=true" width="400" /></td>
+    <td><img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/Macbook-Air-localhost%20(9).png?raw=true" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/Macbook-Air-localhost%20(10).png?raw=true" width="400" /></td>
+    <td><img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/Macbook-Air-localhost%20(11).png?raw=true" width="400" /></td>
+    <td><img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/Macbook-Air-localhost%20(12).png?raw=true" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/Macbook-Air-localhost%20(13).png?raw=true" width="400" /></td>
+    <td><img src="https://github.com/sanketyelugotla/ScalarLearn/blob/main/Screenshots/Macbook-Air-localhost.png?raw=true" width="400" /></td>
+    <td></td>
+  </tr>
+</table>
