@@ -1,14 +1,14 @@
 "use client";
-import { useEffect, useState } from "react";
-import { useParams, useRouter } from "next/navigation";
-import { motion } from "framer-motion";
-import { BookOpen, Users, Clock, PlayCircle, CheckCircle, Lock, FileText } from "lucide-react";
-import Cookies from "js-cookie";
-import { getCourse, enrollInCourse } from "@/services/course";
-import { getCourseLectures } from "@/services/lecture";
 import { Button } from "@/components/ui/button";
-import { toast } from "sonner";
 import { useUser } from "@/context/userContext";
+import { enrollInCourse, getCourse } from "@/services/course";
+import { getCourseLectures } from "@/services/lecture";
+import { motion } from "framer-motion";
+import Cookies from "js-cookie";
+import { BookOpen, CheckCircle, FileText, Lock, PlayCircle, Users } from "lucide-react";
+import { useParams, usePathname, useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import { toast } from "sonner";
 
 export default function CourseDetailPage() {
   const params = useParams();
@@ -18,6 +18,7 @@ export default function CourseDetailPage() {
   const [lectures, setLectures] = useState([]);
   const [loading, setLoading] = useState(true);
   const [enrolling, setEnrolling] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     if (params.courseId) {
@@ -29,6 +30,11 @@ export default function CourseDetailPage() {
     try {
       setLoading(true);
       const token = Cookies.get("token");
+      if (!token) {
+        toast.error("Please login to enroll");
+        router.push(`/auth?mode=login&redirect=${encodeURIComponent(pathname)}`);
+        return;
+      }
       const courseData = await getCourse(params.courseId, token);
       courseData.course.isEnrolled = courseData.isEnrolled
       setCourse(courseData.course);
@@ -49,7 +55,7 @@ export default function CourseDetailPage() {
     const token = Cookies.get("token");
     if (!token) {
       toast.error("Please login to enroll");
-      router.push("/auth?mode=login");
+      router.push(`/auth?mode=login&redirect=${encodeURIComponent(pathname)}`);
       return;
     }
 

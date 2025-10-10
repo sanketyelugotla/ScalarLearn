@@ -47,11 +47,6 @@ const Footer = () => {
           </a>
         </div>
 
-        {/* Contact */}
-        <Link href={"/about#contact"}>
-          <p className="underline cursor-pointer">Contact Us</p>
-        </Link>
-
         {/* Divider */}
         <hr className="my-4 border-muted-foreground w-11/12 mx-auto" />
 

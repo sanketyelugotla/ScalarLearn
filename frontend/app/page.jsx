@@ -63,11 +63,6 @@ export default function Home() {
                       </Link>
                     </Button>
                   </motion.div>
-                  <motion.div variants={itemVariants}>
-                    <Button size="lg" variant="outline" asChild>
-                      <Link href="/about">Learn More</Link>
-                    </Button>
-                  </motion.div>
                 </motion.div>
               </motion.div>
               <motion.div
@@ -192,19 +187,7 @@ export default function Home() {
                 </motion.div>
               ))}
             </div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.3 }}
-              className="mt-8"
-            >
-              <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
-                <Button size="lg" asChild>
-                  <Link href="/about">Learn More About Us</Link>
-                </Button>
-              </motion.div>
-            </motion.div>
+
           </div>
         </section>
 
