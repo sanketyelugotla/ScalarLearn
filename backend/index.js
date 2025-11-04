@@ -12,14 +12,24 @@ const app = express();
 
 
 // CORS
+
+// const corsOptions = {
+//     origin: [
+//         'http://localhost:5173',
+//         'http://localhost:3000',
+//         'https://scalar-learn.vercel.app',
+//         process.env.FRONTEND_URI,
+//     ],
+//     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
+//     allowedHeaders: ['Content-Type', 'Authorization'],
+// };
+
 const corsOptions = {
-    origin: [
-        'http://localhost:3000',
-        'https://scalar-learn.vercel.app',
-    ],
+    origin: true,
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
     allowedHeaders: ['Content-Type', 'Authorization'],
 };
+
 app.use(cors(corsOptions));
 
 // Middleware to parse JSON data
